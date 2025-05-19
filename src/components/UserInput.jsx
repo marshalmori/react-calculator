@@ -1,20 +1,20 @@
-export default function UserInput({ userInput, onChange }) {
+export default function UserInput({ onChange, userInput }) {
   return (
     <section id="user-input">
       <div className="input-group">
         <p>
-          <label>Initial investiment</label>
+          <label>Initial Investment</label>
           <input
             type="number"
             required
-            value={userInput.initialInvestiment}
+            value={userInput.initialInvestment}
             onChange={(event) =>
-              onChange("initialInvestiment", event.target.value)
+              onChange("initialInvestment", event.target.value)
             }
           />
         </p>
         <p>
-          <label>Annual investiment</label>
+          <label>Annual Investment</label>
           <input
             type="number"
             required
